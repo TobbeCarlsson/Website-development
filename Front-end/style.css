@@ -1,0 +1,361 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+   
+  body {
+    margin: 20px auto;
+    font-family: "Lato";
+    font-weight: 300;
+    
+  }
+   
+  form {
+    padding: 15px 25px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+  }
+   
+  form label {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+   
+  input {
+    font-family: "Lato";
+  }
+
+  #options-group button {
+    margin:auto;
+    padding: 20px;
+    background-color: white; 
+    border: 1px solid black; 
+    color: black; 
+    border-radius: 15px;
+    padding: 10px 24px; 
+    cursor: pointer; 
+    width: 90%; 
+    height: 45px;
+    display: block; 
+    margin-top: 15px;
+    overflow-y: scroll;
+  }
+  
+  
+  
+  
+  #options-group button:hover {
+    background-color: lightgrey;
+  }
+
+  #optionswrapper{
+    position: absolute;
+    top:380px;
+    overflow-y: scroll;
+    left:120px;
+    height:274px;
+    margin: 0 auto;
+    padding-bottom: 25px;
+    background: #eee;
+    width: 500px;
+    max-width: 100%;
+    border: 2px solid #212121;
+    border-radius: 4px;
+  }
+
+  #formwrapper{
+    position: absolute;
+    top:690px;
+    left:120px;
+    height:30px;
+    margin: 0 auto;
+    padding-bottom: 25px;
+    background: #eee;
+    width: 500px;
+    max-width: 100%;
+    border: 2px solid #212121;
+    border-radius: 4px;
+  }
+   
+  #chatwrapper{
+    position: absolute;
+    left:900px;
+    top:20px;
+  }
+
+  #postchatwrapper{
+      position: absolute;
+      left:900px;
+      top:1000px;
+      
+  }
+
+  #videowrapper{
+    position: absolute;
+    top:20px;
+    overflow-y: scroll;
+    left:120px;
+    height:274px;
+    margin: 0 auto;
+    padding-bottom: 25px;
+    background: #eee;
+    width: 500px;
+    max-width: 100%;
+    border: 2px solid #212121;
+    border-radius: 4px;
+  }
+
+  .textwrapper{
+    margin: 0 auto;
+    padding-bottom: 25px;
+    background: #eee;
+    width: 500px;
+    height: 600;
+    max-width: 100%;
+    border: 2px solid #212121;
+    border-radius: 4px;
+  }
+
+  #chatratingwrapper{
+    position:absolute;
+    top:1000px;
+    left:100px;
+    margin: 0 auto;
+    padding-bottom: 25px;
+    background: #eee;
+    text-align:center;
+    width: 500px;
+    max-width: 100%;
+    border: 2px solid #212121;
+    border-radius: 4px;
+  }
+
+  #usermsg{
+    text-align: left;
+    float:left;
+    display: block; 
+    margin: 0 auto;
+    margin-bottom: 2px;
+    margin-right: 60%;
+    padding: 10px;
+    background: #fff;
+    height: auto;
+    width:40%;
+    border: 1px solid #a7a7a7;
+    overflow: auto;
+    margin-top: 15px;
+    border-radius: 8px;
+    border-bottom: 4px solid #a7a7a7;
+  }
+
+  #reply{
+    text-align: left;
+    float:right;
+    display: block; 
+    margin: 0 auto;
+    margin-bottom: 2px;
+    margin-left: 60%;
+    padding: 10px;
+    background: #fff;
+    height: auto;
+    width:40%;
+    border: 1px solid #a7a7a7;
+    overflow: auto;
+    margin-top: 15px;
+    border-radius: 8px;
+    border-bottom: 4px solid #a7a7a7;
+  }
+
+  #ratingmsg{
+    text-align: left;
+    display: block; 
+    margin: 0 auto;
+    margin-bottom: 2px;
+    margin-left: 20%;
+    padding: 10px;
+    background: #fff;
+    height: auto;
+    width:60%;
+    border: 1px solid #a7a7a7;
+    overflow: auto;
+    margin-top: 15px;
+    border-radius: 8px;
+    border-bottom: 4px solid #a7a7a7;
+  }
+
+  #sliderwrapper{
+    position:absolute;
+    top:1310px;
+    left:100px;
+    margin: 0 auto;
+    padding-bottom: 25px;
+    background: #eee;
+    width: 500px;
+    max-width: 100%;
+    border: 2px solid #212121;
+    border-radius: 4px;
+    text-align:center;
+  }
+
+  .slider:hover {
+    opacity: 1; 
+  }
+
+  .slidecontainer{
+      width:100%;
+  }
+
+  .slider {
+    text-align:center;
+    appearance: none;
+    width: 92%; 
+    margin-left: 4%;
+    height: 25px; 
+    outline: none; 
+    opacity: 0.7; 
+    -webkit-transition: .2s; 
+    transition: opacity .2s;
+    
+  }
+
+ 
+  
+  #ratingchatbox{
+    text-align: left;
+    overflow-y: scroll;
+    margin: 0 auto;
+    margin-bottom: 2px;
+    padding: 10px;
+    background: #fff;
+    height: 200px;
+    width: 450px;
+    border: 1px solid #a7a7a7;
+    overflow: auto;
+    border-radius: 4px;
+    border-bottom: 4px solid #a7a7a7;
+  }
+
+  #postchatbox, 
+  #chatbox {
+    text-align: left;
+    overflow-y: scroll;
+    margin: 0 auto;
+    margin-bottom: 2px;
+    padding: 10px;
+    background: #fff;
+    height: 630px;
+    width: 450px;
+    border: 1px solid #a7a7a7;
+    overflow: auto;
+    border-radius: 4px;
+    border-bottom: 4px solid #a7a7a7;
+  }
+   
+  #sendbox {
+    
+    display:block;
+    flex: 1;
+    border-radius: 4px;
+    border: 1px solid black;
+  }
+   
+  #name {
+    border-radius: 4px;
+    border: 1px solid #ff9800;
+    padding: 2px 8px;
+  }
+   
+  #submitmsg,
+  #enter{
+    background: white;
+    border: 2px solid black;
+    color: black;
+    padding: 4px 10px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+
+  #submitmsg:hover{
+      background-color: lightgray;
+  }
+   
+  .error {
+    color: #ff0000;
+  }
+  #ratingmenu,
+  #menu {
+    padding: 15px 25px;
+    display: flex;
+  }
+  #ratingmenu p.welcome,
+  #menu p.welcome {
+    flex: 1;
+  }
+
+  #emoticonwrapper{
+    position: relative;
+    top:-1060px;
+    right:350px;
+    height:20px;
+    margin: 0 auto;
+    padding-bottom: 25px;
+    background: #eee;
+    width: 500px;
+    max-width: 100%;
+    border: 2px solid #212121;
+    border-radius: 4px;
+    overflow-x:auto;
+  }
+
+  #emoticon{
+    width: 40px; 
+    position: relative;
+    top: 2px;
+    object-fit: contain;
+    margin-left:5px;
+  }
+
+  #video{
+      position: relative;
+      height: 100%;
+      margin-top: 10px;
+      margin-left: 100px;
+      
+  }
+
+  #audio{
+      position:absolute;
+      top:335px;
+      left:120px;
+      width: 500px;
+  }
+
+  #ratingbutton {
+    position:relative;
+    padding: 20px;
+    top:10px;
+    background-color: white; 
+    border: 1px solid black; 
+    color: black; 
+    border-radius: 15px;
+    padding: 10px 24px; 
+    cursor: pointer; 
+    width: 80px; 
+    height: 15px;
+    text-align:center;
+    line-height: 0px;
+    
+  }
+  
+  
+  
+  
+  #ratingbutton:hover {
+    background-color: lightgrey;
+  }
+
+  
+   
+   
